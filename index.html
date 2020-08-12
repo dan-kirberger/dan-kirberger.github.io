@@ -4,7 +4,10 @@
 <h2>Video testingy thingy</h2>
 <script>
 var obj = document.createElement('video');
-console.log(obj.canPlayType('video/mp4')); // "maybe"
+const types = ['video/mp4']
+types.forEach(type => {
+  document.write(`${type}: ${obj.canPlayType('video/mp4')}`)
+})
 </script>
 </body>
 </html>
