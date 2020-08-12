@@ -7,7 +7,7 @@
 var obj = document.createElement('video');
 const types = ['video/mp4', 'video/3gpp', 'video/mpeg', 'video/quicktime', 'video/vnd.dlna.mpeg-tts', 'video/x-flv', 'video/x-ms-wmv']
 types.forEach(function(type) {
-  document.writeln(`${type}: ${obj.canPlayType('video/mp4')}`)
+  document.writeln(type + ": " + obj.canPlayType('video/mp4'))
 })
 </script>
 </pre>
