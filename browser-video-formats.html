@@ -2,6 +2,7 @@
 <html>
 <body>
 <h2>Video testingy thingy</h2>
+  <pre>
 <script>
 var obj = document.createElement('video');
 const types = ['video/mp4', 'video/3gpp', 'video/mpeg', 'video/quicktime', 'video/vnd.dlna.mpeg-tts', 'video/x-flv', 'video/x-ms-wmv']
@@ -9,5 +10,6 @@ types.forEach(type => {
   document.writeln(`${type}: ${obj.canPlayType('video/mp4')}`)
 })
 </script>
+</pre>
 </body>
 </html>
